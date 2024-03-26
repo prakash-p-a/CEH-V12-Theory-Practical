@@ -1,1 +1,91 @@
-Command lines of CEH labs
+COMMAND LINE PROMPTS OF CEH LABS V12
+
+-:Prerequisite Tools:-
+>- `sudo apt-get update & sudo apt-get upgrade`
+>- `sudo apt install zsh zsh-autocomplete zsh-common zsh-autosuggestions zsh-syntax-highlighting`
+>- `chsh -s $(which zsh)`  Then enter this to make your default shell as zsh and logout and logback in for changes to take effect
+>- To update anyfile `sudo source [filename]`
+>- If  Ctrl+ Left/Right not working  add below lines to .zshrc
+>	bindkey 'D (Key to Replace)' backward-word
+>	bindkey 'C (Key to Replace)' forward-word
+>- `Install sublime text deb file`
+>- `Download deb file of AngryIP scanner `
+>- `Make root user as default terminal - sudo su`
+>- `sudo apt install nfs-common for getting showmount command`
+>- `sudo apt install nfs-kernel-server`
+ 
+
+<<<Module 2 - Footprinting & Reconnaissance>>>
+
+
+-:Passive Information Gathering:-
+
+`Builtwith Extension` - To identify technologies used in the site
+`whatweb -v [url]` - To identify technologies and other info.
+`wafw00f` - To identify WAF
+`robots.txt & sitemap.xml` / sitemaps.xml
+`webhttrack` - To clone Website
+https://search.censys.io/ <br>
+###### Netcraft -- Provides DNS, which technologies being used and much more information about a website
+https://sitereport.netcraft.com/
+ 
+How Find the maximum frame size for the network?
+> ping [website.com] –f –l 1472
+ -l size Send buffer size.
+ -f Set Don't Fragment flag in packet
+
+To find the minimum ttl accepted by the website
+First run the tracert or traceroute on the target web server and identify the number of hops and take a note of it.
+Now run the ping command by adding the switches -i ( ttl value) -n (number of pings)
+Now put the value of hops which we got in the tracert in the -i switch , to get the min ttl accurately `OR` 
+(Try changing the values slightly down until you get the minimum ttl accepted by the website)
+
+---Whois Enumeration---
+`whois [domain]`
+
+---DNS Reconnaissance---
+`dnsenum [domain]`
+`dnsrecon -d [domain]`
+
+---Reverse IP Domain Check---
+`https://www.yougetsignal.com/tools/web-sites-on-web-server/`
+https://dnsdumpster.com/
+
+---Subdomain Enumeration Tool- Passive/Active---
+```
+subfinder -d [domain name]
+```
+`amass enum -passive -d [domain name] -src `
+
+---The Web Application Firewall (WAF) Fingerprinting Toolkit---
+`wafw00f [domain]`
+
+---Custom Worlist Using `cewl`---
+We can make custom wordlists from any webpage using a  tool called Cewl
+```sh
+cewl -w [output_file] -d[Level of crawling] -m [ minimum words we need in our wordlist] [domain_name]
+```
+
+---Reverse IP Domain Check---
+https://www.yougetsignal.com/tools/web-sites-on-web-server/
+
+---IP Range Analyzer---
+https://www.arin.net/resources/registry/whois/  
+
+---OSINT Framework---
+https://osintframework.com/
+
+---Metadata Extraction using `FOCA` Tool---
+[Releases · ElevenPaths/FOCA (github.com)](https://github.com/ElevenPaths/FOCA/releases)
+
+---Enumeration using Metasploit---
+>[!check] NMAP inside Metasploit
+>msfdb init
+>service postgresql start
+>msfconsole
+>msf > db_status
+>nmap -Pn -sS -A -oX Test 10.10.10.0/24
+>db_import Test
+>hosts -> To show all available hosts in the subnet
+>db_nmap -sS -A 10.10.10.16 -> To extract services of particular machine
+>services -> to get all available services in a subnet
