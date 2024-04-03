@@ -89,3 +89,43 @@ https://osintframework.com/
 >hosts -> To show all available hosts in the subnet
 >db_nmap -sS -A 10.10.10.16 -> To extract services of particular machine
 >services -> to get all available services in a subnet
+
+
+<<<Module 3 - Scanning the network>>>
+
+
+-:Active Information Gathering:-
+
+``Do nmap pot scanning for snmp port 161 - if we get open port do script scanning and save the output file.``
+
+---Host DIscovery---
+`nmap -sn -PR/PE/PP/PM 192.168.1.0/24`
+
+---`Angry IP Scanner - ipscan`---
+`netdiscover -i [Interface]  -r [IP\Subnet]`
+
+---Identify Host OS with TTL---
+
+---Scanning Networks---
+
+---Hping3---
+Port Scanning using Hping3:
+`hping3 --scan 1-3000 -S 10.10.10.10`
+--scan parameter defines the port range to scan and –S represents SYN flag
+
+Pinging the target using HPing3:
+`hping3 -c 3 10.10.10.10 -1`
+-c 3 means that we only want to send three packets to the target machine.
+
+UDP Packet Crafting
+`hping3 10.10.10.10 --udp --rand-source --data 500`
+
+TCP SYN request
+`hping3 -S 10.10.10.10 -p 80 -c 5`
+-S will perform TCP SYN request on the target machine, -p will pass the traffic through which port is assigned, and -c is 
+the count of the packets sent to the Target machine.
+
+HPing flood
+`hping3 10.10.10.10 --flood`
+
+#Stay tuned for more
