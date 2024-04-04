@@ -128,4 +128,71 @@ the count of the packets sent to the Target machine.
 HPing flood
 `hping3 10.10.10.10 --flood`
 
+
+
+<<<Module 4 - Enumeration>>>
+
+---Ping [ip]---
+``nmap -Pn -p 1-65535 -A -T4 -vv [IP]``  /  ``nmap -Pn  -sU -p 53,161,389 -A -T4 -vv [IP]``
+NMAP NSE Docs - https://nmap.org/nsedoc/scripts/
+
+---NetBIOS Enumeration  (139) ---
+> NetBIOS Enumeration : 
+    nbtstat –A 10.10.10.16
+    net use
+    net use \10.10.10.16\e ““\user:””
+    net use \10.10.10.16\e ““/user:””
+
+- NetBIOS Enumerator Windows Application 
+- nmap script --script=nbstat*
+
+---SNMP Enumeration (161)---
+``nmap –sU –p 161`` 
+``nmap -sU -p 161 --script="snmp*" [IP]``
+
+``snmp-check [ip]`` - List All Information about systems in  a network
+``snmpwalk -c public -v1 [ip]`` 
+
+> msfconsole
+    use auxiliary/scanner/snmp/snmp_enum
+    set RHOSTS and exploit
+    use auxiliary/scanner/snmp/snmp_login
+    set RHOSTS and exploit
+    
+---LDAP Enumeration (389)---
+``Adexplorer``
+OR 
+Firstly, Login to the Windows machine via the given credentials and access the Local Users and Groups from 
+Run Window(Win + R) and typing `lusrmgr.msc`
+
+---NFS Enumeration (389)---
+``nmap -p 2049 [ip] -sV -vv -T4``
+``showmount -e [IP]``
+
+---DNS Enumeration (53)---
+``nmap -p 53 [ip] -sV -vv -T4 --script="dns*"``
+
+Use Passive Info Gathering Tools
+``use sudo while using dnsrecon``
+
+---SMTP Enumeration (25,2525,587)---
+``nmap -p 25,2525,587 [ip] -sV -vv -T4 --script="smtp*"``
+
+---SMB Enumeration (137,138,139,445)---
+use scanner/smb/smb_version
+set RHOSTS 10.10.10.8-16
+set THREADS 100
+run
+hosts -> now exact os_flavor information has been updated
+
+---FTP Enumeration (21)---
+``nmap -p 21 [ip] -sV -vv -T4 --script="ftp*"``
+
+---Enum4linux ---
+``enum4linux -a [ip]``
+
+---Nikto ---
+``nikto -h [domain/ip] -output [filename] -Format txt/xml/html``
+
+
 #Stay tuned for more
