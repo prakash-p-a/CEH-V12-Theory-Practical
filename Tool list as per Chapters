@@ -1,0 +1,142 @@
+#Look for file inside labs to get proper commandlines as per Eccouncil labs
+
+Introduction to Ethical Hacking:
+No specific tools required.
+
+Footprinting and Reconnaissance:
+
+WHOIS Lookup: to gather domain registration information.
+Nslookup: for DNS enumeration.
+TheHarvester: for email address and subdomain enumeration.
+Shodan: for gathering information about internet-connected devices.
+Maltego: for visualizing and analyzing reconnaissance data.
+
+Scanning Networks:
+
+Nmap: for port scanning and network discovery.
+Nessus: for vulnerability scanning.
+OpenVAS: open-source vulnerability scanner.
+Zenmap: Nmap's graphical user interface.
+
+Enumeration:
+
+Enum4linux: for enumerating information from Windows systems.
+LDAP Enumeration tools: such as ldapsearch and ADExplorer.
+SMB Enumeration tools: like enum4linux and smbclient.
+SNMP Enumeration tools: such as SNMPwalk and snmpenum.
+
+Vulnerability Analysis:
+
+Nessus: for vulnerability scanning and assessment.
+OpenVAS: open-source vulnerability scanner.
+Nikto: for web server and CGI scanning.
+Qualys: cloud-based vulnerability management platform.
+
+System Hacking:
+
+Metasploit Framework: for exploiting vulnerabilities.
+Hydra: for password cracking.
+John the Ripper: for password cracking.
+Cain & Abel: for password recovery.
+Mimikatz: for extracting credentials from memory.
+
+Malware Threats:
+
+VirusTotal: for analyzing suspicious files and URLs.
+Wireshark: for network traffic analysis.
+YARA: for malware detection and analysis.
+Cuckoo Sandbox: for dynamic malware analysis.
+Malwarebytes: for malware scanning and removal.
+
+Sniffing:
+
+Wireshark: for packet capture and analysis.
+Tcpdump: command-line packet analyzer.
+Ettercap: for man-in-the-middle attacks.
+Cain & Abel: for password sniffing.
+
+Social Engineering:
+
+SET (Social Engineering Toolkit): for creating social engineering attacks.
+Phishing frameworks: such as Gophish and Evilginx.
+BeEF (Browser Exploitation Framework): for client-side attacks.
+Pretexting tools: like Maltego and ReelPhish.
+
+Denial-of-Service (DoS):
+
+LOIC (Low Orbit Ion Cannon): for launching DoS attacks.
+HOIC (High Orbit Ion Cannon): for launching DoS attacks.
+Slowloris: for slow HTTP DoS attacks.
+Hping3: for packet crafting and flooding.
+
+Session Hijacking:
+
+Wireshark: for capturing and analyzing network traffic.
+THC-Hydra: for password brute-forcing.
+Burp Suite: for intercepting and modifying HTTP requests.
+
+Evading IDS, Firewalls, and Honeypots:
+
+Snort: for intrusion detection and prevention.
+Suricata: for intrusion detection and prevention.
+Nmap: for firewall evasion techniques.
+Honeyd: for honeypot deployment.
+
+Hacking Web Servers:
+
+Burp Suite: for web application security testing.
+Nikto: for web server scanning.
+SQLMap: for automated SQL injection attacks.
+DirBuster: for directory and file enumeration.
+OWASP ZAP: for web application security testing.
+
+Hacking Web Applications:
+
+Burp Suite: for web application security testing.
+OWASP ZAP: for web application security testing.
+SQLMap: for automated SQL injection attacks.
+XSStrike: for cross-site scripting (XSS) attacks.
+BeEF (Browser Exploitation Framework): for client-side attacks.
+
+SQL Injection:
+
+SQLMap: for automated SQL injection attacks.
+Havij: for SQL injection testing.
+SQLninja: for SQL injection exploitation.
+No specific tools required for detection and prevention.
+
+Wireless Network Security:
+
+Aircrack-ng: for wireless network security testing.
+Kismet: for wireless network detection and analysis.
+Reaver: for WPA/WPA2-PSK brute-force attacks.
+Wireshark: for wireless packet analysis.
+
+Mobile Platform Security:
+
+MobSF (Mobile Security Framework): for mobile application security testing.
+Frida: for dynamic instrumentation of mobile apps.
+Drozer: for Android security assessment.
+APKTool: for reverse engineering Android apps.
+
+IoT Security:
+
+Shodan: for discovering IoT devices.
+Wireshark: for IoT device traffic analysis.
+Nmap: for scanning IoT networks.
+Firmware analysis tools: such as Binwalk and Firmware Analysis Toolkit.
+
+Cloud Computing Security:
+
+AWS CLI (Command Line Interface): for managing AWS resources.
+Azure CLI: for managing Azure resources.
+GCP CLI: for managing Google Cloud Platform resources.
+Cloud security monitoring tools: such as CloudTrail, GuardDuty, and Security Command Center.
+
+Cryptography:
+
+OpenSSL: for cryptographic operations.
+John the Ripper: for password cracking.
+Hashcat: for password cracking.
+GPG (GNU Privacy Guard): for secure communication and file encryption.
+
