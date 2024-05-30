@@ -195,4 +195,22 @@ hosts -> now exact os_flavor information has been updated
 ``nikto -h [domain/ip] -output [filename] -Format txt/xml/html``
 
 
+<<<Module 05 - Vulnerability Analysis>>>
+
+>[!check] Nikto & Nessus
+>`nikto -h [ip / domain] -Tuning 1`
+>Nessus runs on  https://localhost:8834
+>Nessus -> Policies > Advanced scan
+>Discovery > Host Discovery > Turn off Ping the remote host
+>Port Scanning > check the Verify open TCP ports found by local port enumerators
+>Advanced
+>Max number of TCP sessions per host and = unlimited
+>Max number of TCP sessions per scan = unlimited
+>Credentials > Windows > Username & Password
+>Save policy > Create new scan > User Defined
+>Enter name & Target
+>Schedule tab > Turn of Enabled
+>Hit launch from drop-down of save
+
+
 #Stay tuned for more
