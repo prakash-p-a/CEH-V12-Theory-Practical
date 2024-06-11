@@ -364,4 +364,59 @@ Download covert_tcp file
 [CLEARING LOGS - Windows](simplenote://note/676ec02f-ed17-4ea0-8c7e-4c58d8b77c86)
 
 
+<<<Module 08- Sniffing>>>
+
+---Perform MAC flooding using macof---
+
+- `macof -i [interface] -n [no.of packets to be sent]`
+
+- This command will start flooding the CAM table with random mac addresses.
+
+- We can turn on wireshark and watch this random packets being sent from random mac addresses.
+
+---Perform DHCP Starvation attack using yersinia---
+
+- In DHCP starvation attack , an attacker floods the DHCP server by sending a large number of DHCP requests and uses all available 
+IP addresses that DHCP server can issue. As a result the DHCP server cannot issue any more IP addresses , leading to a DOS attack.
+- Type ``` yersinia -I ``` to start yersinia in interactive mode.
+- To remove the notification window press any key
+- Press h for help menu and press q to exit help menu.
+- Press F2 to select DHCP mode.
+- Press x to list available attack options
+- select the options you want , (sending discover packets options is most widely used for DHCP starvation)
+- Now yersinia will start sending the DHCP packets to all active machines of your LAN network.
+
+---Perform ARP Poisoning using arpspoof---
+
+- An ARP spoofing, also known as ARP poisoning, is a Man in the Middle (MitM) attack that allows attackers to intercept communication 
+between network devices.
+- We need to run arpspoof 2 times so that we can make the router believe that we are the target IP and in second attempt we make the 
+target believe that we are the router IP.
+- `arpspoof -i [interface] -t [target IP] [router default gateway IP]`
+
+-  `arpspoof -i [interface] -t [router default gateway IP] [target IP]`
+
+---Spoof a mac address using mac changer(linux) , TMAC and SMAC(Windows)---
+
+`ifconfig eth0 down`
+`macchanger -a eth0` to set a random vendor MAC address to the Network interface
+`macchanger -r eth0` to set the random mac address
+`macchanger -p eth0` to set the MAC address to its default value
+At the end type `ifconfig eth0 up`
+
+---Wireshark analysis---
+
+- If we want to remotely monitor any network traffic for some other computer in our LAN network in our main attacking machine then 
+we need to add the IP address and the login credentials of that machine to the remote interface tab located in capture options of wireshark 
+(This option is available only in Windows version of wireshark)
+- First we need to turn on one service named `Remote Packet Capture Protocol v.0`  in victim machine whose traffic we want to monitor remotely.
+- To monitor the random flooding of arp requests we need to go to preferences and then go to protocols , then go to arp/rarp section and then 
+turn on the option `detect arp request storms`
+- Using wireshark we can obtain the credentials of the target system whom we are monitoring if the user on that system enters any credentials 
+on a http website (plaintext)
+- We can use the filter `http.request.method == POST`
+
+---To Detect a sniffer which is in promiscous mode in our LAN network we can use NMAP nse script named `sniffer-detect`
+---
+
 #Stay tuned for more
