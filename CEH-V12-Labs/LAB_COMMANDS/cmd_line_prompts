@@ -429,4 +429,22 @@ on a http website (plaintext)
 - For more info , refer this [ Hping3]
 - We can also use msf module named `synflood` to perform dos attack and spoofing IP address.
 
+<<<Module 13: Hacking web Server>>>
+
+---Banner Grabbing---
+
+`curl -i -s [url]`
+`wget -q -S 162.241.216.11`
+`nc [url] [port]`
+`telnet [url] [port]`
+
+Bruteforcing FTP
+`hydra  -L [userlList.txt] -P [wordlist.txt] -vV [MACHINE_IP] ftp|smb|ssh|ldap`
+
+NMAP NSE Scripts
+`--script="http-enum"` :- Enumeration of Tragetd Website
+`--script="https-waf-detect"` :- WebApplicationFirewall Detection 
+`--script="http-trace"` :- This script will detect vulnerable server that uses TRACE method by sending an HTTP TRACE request that shows if the method is enabled or not
+`--script="hostmap-bfk" -script-args="hostmap-bfk.prefix=hostmap-"`
+
 #Stay tuned for more
