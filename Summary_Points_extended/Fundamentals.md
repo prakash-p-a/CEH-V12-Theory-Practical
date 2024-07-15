@@ -152,7 +152,8 @@ To calculate the first octet (192.), from binary format to decimal:
 ## Private and Public IP Addresses
 All IPv4 addresses can be divided into two major groups: **global (or public, external)** - this group can also be called 'WAN addresses' — those that are used on the Internet, and **private (or local, internal) addresses** — those that are used in the local network (LAN).
 
-![priv-pub](https://wiki.teltonika-networks.com/wikibase/images/thumb/a/a7/Sip.png/1100px-Sip.png)
+![image](https://github.com/user-attachments/assets/1ad22e1f-1a0b-4b21-9170-01cdfe48faa0)
+
 
 ## More about **Private IP** addresses:
 Private (internal) addresses are not routed on the Internet and no traffic can be sent to them from the Internet, they only supposed to work within the local network.
@@ -198,7 +199,7 @@ Because an IP address is limited to indicating the network and the device addres
 
 
 ## Exercises:
-Subnetting comes in handy to awnser basic questions like:
+Subnetting comes in handy to answer basic questions like:
    - Identify the network and broadcast address
    - How many hosts available in the network/hosts range?
    - What masks allow the particular host?
@@ -543,13 +544,13 @@ Kali Linux contains several hundred tools targeted towards various information s
 # 2. Installing Kali Linux on VirtualBox
 Once you have installed VirtualBox and downloaded the Kali Linux image, you just need to import it to VirtualBox in order to make it work.
 
-1. **Launch VirtualBox and click the `Import Button` on the top center menu**
+1. **Launch VirtualBox and click the `New Button` on the top center menu**
 
-![kali1](https://i1.wp.com/itsfoss.com/wp-content/uploads/2019/02/vmbox-import-kali-linux.jpg?w=956&ssl=1)
+![image](https://github.com/user-attachments/assets/20662cbf-da19-4b69-bb96-82e5776dcea9)
 
 2. **Next, browse the Kali Linux image (OVA) you just downloaded and choose it to be imported (as you can see in the image below).**
 
-![kali2](https://i2.wp.com/itsfoss.com/wp-content/uploads/2019/02/vmbox-linux-next.jpg?w=954&ssl=1)
+![image](https://github.com/user-attachments/assets/ce0d6a8a-efb6-4fc9-a028-fed2589898e6)
 
 3. **Next, you will be shown the settings for the virtual machine you are about to import. So, you can customize them or not – that is your choice based on your hardware capacity.**
     - If you have a computer with 8GB RAM and at least 2 cores available, leave the default settings.
@@ -617,7 +618,7 @@ The recommended configuration for Ubuntu VM is 2GB to 3GB RAM and at least 4GB o
 - [Ubuntu official website](https://ubuntu.com/download/desktop)
 - [Kali Linux official website](https://www.offensive-security.com/kali-linux-vm-vmware-virtualbox-image-download/#1572305786534-030ce714-cc3b)
 
-**Note**: If you don't know how to setup your VMs you can check the [previous module on lab building](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/0-Core-Knowledge/1-Lab-Building.md) or more specifically a tutorial on [how to setup Ubuntu VM](https://www.makeuseof.com/install-ubuntu-virtualbox/).
+**Note**: If you don't know how to setup your VMs you can check the [previous module on lab building]([https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/0-Core-Knowledge/1-Lab-Building.md](https://github.com/prakash-p-a/CEH-V12-Theory-Practical/edit/main/Summary_Points_extended/Fundamentals.md#lab-building)) or more specifically a tutorial on [how to setup Ubuntu VM](https://www.makeuseof.com/install-ubuntu-virtualbox/).
 
 # Diving into Ubuntu
 
@@ -629,7 +630,6 @@ At this point you should be familiar with a basic operating system such as Windo
 **Note**: This tutorial will teach you **how to operate Linux by command line** not the interface. Technically you can do some tasks by using the interface, but I encourange to do as much you can on CLI (command line interface) and this tutorial will guide through this. By this way you can have a granular control to handle the system.
 
 * Fire up your Ubuntu VM and explore by yourself the interface, pre-installed applications and configurations.
-![ubuntu2](https://techlatest.b-cdn.net/wp-content/uploads/2020/04/ubuntu-20.04-app-folders-1536x864-1-1024x576.jpg)
 
 ## UI vs. CLI
 This example will compare the differences between UI(user interface) and CLI(command line interface) by performing a simple task: 
