@@ -30,45 +30,34 @@ There are many different types of network, which can be used for different purpo
 
 * A LAN is a network that has a logical and physical borders that a computer can broadcast
 
-<p align="center">
-<img width="70%" src="![image](https://github.com/user-attachments/assets/9a4f4e95-e409-4aca-82a8-a2e14b4043b9)
-" />
-</p>
+![image](https://github.com/user-attachments/assets/9a4f4e95-e409-4aca-82a8-a2e14b4043b9)
 
 ### WAN - Wide Area Network
 
 * WAN is a multiple LANs or additional WANs with routing functionality for interconnectivity.
 
-<p align="center">
-<img width="70%" src="![image](https://github.com/user-attachments/assets/08f4d3e0-930b-4f58-92bb-cfb8f4e86a3c)
-" />
-</p>
+![image](https://github.com/user-attachments/assets/08f4d3e0-930b-4f58-92bb-cfb8f4e86a3c)
 
 ### MAN - Metropolitan Area Network 
 
-<p align="center">
-<img width="70%" src="![image](https://github.com/user-attachments/assets/71146d62-b95a-4b66-b7c2-6e58f57829cd)
-" />
-</p>
+![image](https://github.com/user-attachments/assets/71146d62-b95a-4b66-b7c2-6e58f57829cd)
 
 ### Internet
 Connecting WANs through WANs until complete the entire world = Internet.
 
 * The protocol which runs the internet is TCP/IP
 * As long you're using legitimate IPv4 address or IPv6
-<p align="center">
-<img width="70%" src="![image](https://github.com/user-attachments/assets/bf86bcef-a4a6-4c30-99c8-4a236ec1fb34)
-" />
-</p>
+* 
+![image](https://github.com/user-attachments/assets/bf86bcef-a4a6-4c30-99c8-4a236ec1fb34)
+
 
 ### Intranet
 If you're using the TCP/IP stack and making your own LAN or WAN = Intranet.
 
 * Intranet is a private network which still runs TCP/IP
 
-<p align="center">
-<img width="70%" src="" />
-</p>
+![image](https://github.com/user-attachments/assets/d8b5048b-ce16-4dd9-b97b-49a3e9a6ec9e)
+
 
 ## Common Terms in Networking
 * **IP (internet protocol) address**: the network address of the system across the network, which is also known as the Logical Address).
