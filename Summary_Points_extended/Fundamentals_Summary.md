@@ -1,7 +1,3 @@
-
-
-# <u>Essential Knowledge</u>
-
 ## <u> OSI Model and TCP Model</u>
 - **The OSI Model** we just looked at is just a reference/logical model. It was designed to describe the functions of the communication system by dividing the communication procedure into smaller and simpler components. 
 
